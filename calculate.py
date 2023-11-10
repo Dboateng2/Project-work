@@ -1,5 +1,5 @@
-def calculateTotalScore(class_score, exam_score):
-    return class_score + exam_score
+def calculateTotalScore(classScore, examScore):
+    return classScore + examScore
 
 def calculatePercentage(total_score):
     return (total_score / 700) * 100
@@ -19,8 +19,15 @@ def calculateGrade(percentage):
         return "F"
 
 def calculateResult(grade):
-    if grade in ["A", "B", "C"]:
-        return "Pass"
+    if grade in ["A"]:
+        return "Excellent"
+    elif grade in ["B"]:
+        return "Very Good"
+    elif grade in ["C"]:
+        return "Good"
+    elif grade in ["D"]:
+        return "Fair"
+    elif grade in ["E"]:
+        return "Poor"
     else:
-        return "Fail"
-    
+        return "Very Poor"
